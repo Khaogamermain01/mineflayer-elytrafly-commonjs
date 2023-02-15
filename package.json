@@ -1,0 +1,33 @@
+{
+  "name": "mineflayer-elytrafly-commonjs",
+  "version": "1.0.0",
+  "description": "Plugin for ElytraFly on mineflayer bots for CommonJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo Why are you looking for scripts"
+  },
+  "keywords": [
+    "mineflayer",
+    "bot",
+    "minecraft",
+    "elytra",
+    "commonjs"
+  ],
+  "author": "Khaogamermain01",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mineflayer": "^4.3.0"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khaogamermain01/mineflayer-elytrafly-commonjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Khaogamermain01/mineflayer-elytrafly-commonjs/issues"
+  },
+  "homepage": "https://github.com/Khaogamermain01/mineflayer-elytrafly-commonjs#readme"
+}
