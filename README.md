@@ -27,6 +27,26 @@ bot.loadPlugin(elytrafly)
 
 In your code (preferably after spawning the bot)
 
+<h3>Example</h3>
+
+---
+
+```js
+const { elytrafly } = require("mineflayer-elytrafly-commonjs");
+const Vec3 = require("vec3").Vec3;
+const bot = mineflayer.createBot({ username: 'Player' });
+
+bot.loadPlugin(elytrafly);
+
+bot.once("spawn", async () => {
+  bot.elytrafly.elytraFlyTo(new Vec3(100, 0, 100));
+  // The y level doesn't matter because it will just fall down.
+  
+  await bot.once("elytraFlyGoalReached", () => {});
+  bot.chat("I have arrived at the destination!");
+});
+```
+
 <h3>API</h3>
 
 ---
@@ -110,4 +130,6 @@ The flying speed is proportional to the distance to the goal, but once it gets n
 
 Self-explanatory, fires when it has reached the goal with `bot.elytrafly.elytraFlyTo`
 
-##Credits to Amoraschi [Original](https://www.npmjs.com/package/mineflayer-elytrafly) [Github](https://github.com/amoraschi/mineflayer-elytrafly)
+Credits to Amoraschi
+https://www.npmjs.com/package/mineflayer-elytrafly
+https://github.com/amoraschi/mineflayer-elytrafly
